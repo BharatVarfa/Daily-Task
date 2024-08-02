@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.appForm{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    background-color: rgb(33, 68, 226);
+    color: rgb(12, 12, 12);
+}
+.cont{
+    width: 50vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 50px;
+}

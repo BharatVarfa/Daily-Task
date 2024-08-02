@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 1</title>
+</head>
+
+<body>
+    <script>
+        //1.we can declare many variable in one statement
+        //let a,b,c;
+        //let x=10,y=20,z=30;
+
+
+        //2.Global scope of var
+        /* var x = 2;
+        {
+            var x = "bharat";
+            document.write(x)
+        }
+        document.write(x) */
+        //it will print bharatbharat as var has global scope
+
+
+        // 3.State true or false
+       /*  var x = 10;
+        let x = 25; */
+        //false
+        //we cannot redeclare it using let we can use var in place of let
+
+        /* {
+            let x = 20;
+            let x = 0;
+        } */
+        //false
+        //we cannot redeclare
+
+
+       /*  {
+            let x = 20;
+            var x = 30;
+        } */
+        //false
+        //cannot redeclare
+
+
+        //4.Value of x
+       /*  const x=7;
+        {
+            const x=14;
+            document.write(x)
+        }
+        document.write(x) */
+        //output will be 147
+
+        //5.Redeclaring an existing var or let variable to const is not allowed
+      /*   var x=10;
+        const x=20; */
+        //Confused?????
+
+       /*  {
+            let x=20;
+            const x=30;
+        } */
+       //cannot redeclare as it is declared using let 
+
+       /*{
+        const a=30;
+        const a=40;
+       } */
+      //cannot redeclare const 
+
+    
+      //6.Reassigning existing const in same scope is not allowed
+    /*   const a=1;
+      {
+        a=10;
+      } */
+      ///a=5;
+      /* var a=20;
+      let a=56;
+      const a=35; */
+      // we cant reassign the const variable
+      
+    </script>
+</body>
+
+</html>
