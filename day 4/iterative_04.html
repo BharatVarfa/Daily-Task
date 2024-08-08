@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=prompt("Enter a number:")
+        num=Number.parseInt(num)
+        let temp=num
+        let max=0
+        while(temp>0){
+            let rem=temp%10
+            if(rem>max){
+                max=rem
+            }
+            temp=temp/10
+        }
+        max=Math.floor(max)
+        document.write("Greatest number in "+num+" is "+max)
+    </script>
+</body>
+</html>

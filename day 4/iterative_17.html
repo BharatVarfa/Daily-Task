@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //  Count the number of digits in a number using a while loop, where the number is provided by the user.
+      let n=Number.parseInt(prompt("Enter a number"));
+      let temp=n;
+      let digit=0;
+      while(temp>0){
+        temp=Math.floor(temp/10);
+        digit++
+      }
+      document.write(digit)
+    </script>
+</body>
+</html>

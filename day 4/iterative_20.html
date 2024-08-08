@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check if a number is a palindrome using a do...while loop, where the number is provided by the user.
+        let n=Number.parseInt(prompt("Enter number"));
+        let temp=n,rev=0,rem;
+        while(temp>0){
+            rem=temp%10;
+            rev=rev*10+rem;
+            temp=Math.floor(temp/10);
+        }
+        if(rev==n){
+            document.write(`${n} is Palindrome Number`)
+        }
+        else{
+            document.write(`${n} is not palindrome number`)
+        }
+    </script>
+</body>
+</html>

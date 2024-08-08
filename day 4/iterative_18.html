@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       // Generate the first n terms of the sequence where each term is the sum of the previous two terms, starting with 0 and 1(Fibonacci sequence), using a while loop, where n is provided by the user.
+        let n=Number.parseInt(prompt("Enter number of terms:"));
+        let a=0,b=1,i=1,c=0
+        while(i<=n){
+            document.write(a)
+            document.write("<br>")
+            c=a+b;
+            a=b;
+            b=c;
+            i++;
+        }
+    
+    </script>
+</body>
+
+</html>
