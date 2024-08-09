@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //     *    
+        //    ***   
+        //   *****  
+        //  ******* 
+        // *********
+        //  ******* 
+        //   *****  
+        //    ***   
+        //     * 
+        for(let i=1;i<=20;i++){
+            for(let j=i;j<20;j++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let k=1;k<=(2*i-1);k++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        for(let i=19;i>=1;i--){
+            for(let k=19;k>=i;k--){
+                document.write("&nbsp;&nbsp")
+            }
+            for(let j=1;j<=(i*2-1);j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+</html>
