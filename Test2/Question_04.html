@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="Factorial"></ul>
+    <script>
+        function isFactorial(num){
+            let Factorial=1;
+            if(num===1 || num===0){
+                return true;
+            }
+            for(let i=2;Factorial<=num;i++){
+                    Factorial*=i;
+                    if(Factorial===num){
+                    return true;
+                }
+                } 
+                return false;
+
+            
+        }
+        const ul=document.getElementById('Factorial');
+        for(let i=0;i<=15000;i++){
+            if(isFactorial(i)){
+                const li=document.createElement('li');
+                li.textContent = `${i} is Factorial Number`;
+                ul.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>
