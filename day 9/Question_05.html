@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Validate a UID (Alphabets, Digits, Underscore, Dot, Hyphen)
+        //Prompt: Enter a UID (8-12 characters including letters, digits, underscores, dots, hyphens).
+        //Expected Output: Displays true if the UID is valid, otherwise false.
+        var re=/[a-z A-Z \d _ . -]{8,12}/;
+        let str="AxVb.-56";
+        document.write(re.test(str));
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Validate a Password (At Least One Uppercase, One Lowercase, and One Digit)
+        //Prompt: Enter a password that must be 8-15 characters long and include at least one uppercase letter, one lowercase letter, and one digit.
+        //Expected Output: Displays true if the password is valid, otherwise false.
+
+        let x=prompt("Enter a password that must be 8-15 characters long and include at least one uppercase letter, one lowercase letter, and one digit.");
+        let len= x.length>=8 && x.length<=15;
+        let lowercase=/[a-z]/.test(x);
+        let uppercase=/[A-Z]/.test(x);
+        let number=/[0-9]/.test(x);
+        let special=/[!@#$%^&*(),.?":{}|<>]/.test(x);
+        let res=len && lowercase && uppercase && number && special;
+        document.write(res);
+    </script>
+</body>
+</html>

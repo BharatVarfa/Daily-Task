@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Validate a Date in YYYY-MM-DD Format
+        //Prompt: Enter a date in the format YYYY-MM-DD.
+        //Expected Output: Displays true if the date is in the correct format, otherwise false.
+        let x=prompt("Enter a date in the format YYYY-MM-DD.");
+        var re=/^[\d]{4}-[\d]{2}-[\d]{2}$/;
+        document.write(re.test(x));
+    </script>
+</body>
+</html>

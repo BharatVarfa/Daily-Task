@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check for Specific Product Code Format
+        //Prompt: Enter a product code in the format "P" followed by two digits (e.g., P01, P99).
+        //Expected Output: Displays true if the format is correct, otherwise false.
+        var re=/^P\d\d$/;
+        let str="P12";
+        document.write(re.test(str));
+        let str2="p12";
+        document.write(re.test(str2));
+    </script>
+</body>
+</html>

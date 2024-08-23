@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Validate a Username (Starts with a Letter and Can Include Numbers)
+        //Prompt: Enter a username that starts with a letter and is 5-15 characters long, including letters and digits.
+        //Expected Output: Displays true if the username meets the criteria, otherwise false.
+
+        let x=prompt("Enter a username that starts with a letter and is 5-15 characters long, including letters and digits.");
+        var re=/^[a-z A-Z][a-z A-Z 0-9]{5,15}$/;
+        document.write(re.test(x));
+    </script>
+</body>
+</html>

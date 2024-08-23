@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Given an array let numbers = [4, 2, 5, 1, 3];, write code to sort this array in ascending and descending order
+        //Print the array after each sort.
+        
+        // let numbers = [4, 2, 5, 1,11, 3];
+        // numbers.sort();
+        // document.write(numbers);
+        //this will sort alphabetically
+
+        let numbers = [4, 2, 5, 1,11, 3];
+        numbers.sort(compare);
+        function compare(a,b){
+            return a<b;
+        }
+        document.write(numbers);
+
+    </script>
+</body>
+</html>

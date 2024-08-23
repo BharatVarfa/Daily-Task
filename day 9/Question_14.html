@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Validate a Time Format (24-Hour Clock)
+        //Prompt: Enter a time in the format HH
+        //(24-hour format).
+        //Expected Output: Displays true if the time is in the correct format, otherwise false.
+        let x=prompt('Enter a time in the format HH');
+        var re=/^[\d]{2}:[\d]{2}$/;
+        document.write(re.test(x));
+    </script>
+</body>
+</html>

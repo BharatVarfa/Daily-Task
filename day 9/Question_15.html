@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+        // Validate a Hexadecimal Color Code
+        //Prompt: Enter a color code in the format "#RRGGBB".
+        //Expected Output: Displays true if the input is a valid hexadecimal color code, otherwise false.
+        let x=prompt('Enter a color code in the format "#RRGGBB');
+        var re=/^[#][a-f 0-9]{6}$/i;
+        document.write(re.test(x));
+        </script> 
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Validate Full Name (First Name and Last Name)
+        //Prompt: Enter your full name (First and Last name should start with an uppercase letter).
+        //Expected Output: Displays true if the format is correct (e.g., "Tarun Rathore"), otherwise false.
+        var re=/^[A-Z]{1}[a-z]{1,10}\s[A-Z]{1}[a-z]{1,10}$/;
+        let str="Bharat Varfa";
+        document.write(re.test(str));
+    </script>
+</body>
+</html>

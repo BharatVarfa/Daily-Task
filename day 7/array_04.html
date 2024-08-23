@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //use reduce to calculate factorial of a given number from an array of first n 
+        //natural numbers (n being the number whose factorial need to be calculated).
+        let size=parseInt(prompt("Enter the number for facrotial"));
+        let arr=new Array(size);
+        for(let i=0;i<size;i++){
+            arr[i]=i+1;
+        }
+        let x=arr.reduce((v,i)=>v*i);
+        document.write(x)
+
+
+        ///---LETS SEE HOW ITS WORKING----///
+        // suppose the array is [1,2,3,4,5];
+        // in the first iteration it takes first two values that is [1,2]
+        //and do the operation which is given like here multiplicayion so 1*2=2
+        //now it returns 2
+        //for our understanding lets suppose the array will be [2,3,4,5]
+        //it takes (2,3) and 2*3=9 return 6
+        //[6,4,5] takes (6,4) and 6*4=36 return 24
+        //[24,5] takes (24,5) and 24*5=120 return 120
+        //Answer=120
+
+    </script>
+</body>
+
+</html>

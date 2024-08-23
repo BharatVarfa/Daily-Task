@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create an array of numbers and take input from user to add numbers to these array.
+        let nums=[];
+        while(true){
+            let x=prompt("Enter element to add or Enter NO to stop...");
+            if(x.toLowerCase()==='no'){
+                break;
+            }
+            x=parseInt(x);
+            nums.push(x);
+        }
+        document.write(nums)
+
+
+    </script>
+</body>
+</html>
