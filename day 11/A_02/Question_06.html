@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="paraclass">This is div with paraclass</div>
+    <div>Div without paraclass</div>
+    <div class="paraclass">This is div with paraclass</div>
+    <div>Div without paraclass</div>
+    <div class="paraclass">This is div with paraclass</div>
+    <div>Div without paraclass</div>
+    <div class="paraclass">This is div with paraclass</div>
+    <div>Div without paraclass</div>
+    <div class="paraclass">This is div with paraclass</div>
+    <script>
+        // Change Background Color of Paragraphs Using getElementsByClassName
+        //Task: Select all paragraphs with the class "para-class" and change their background color to light gray.
+        let x=document.getElementsByClassName("paraclass");
+        for(let i=0;i<x.length;i++){
+            x[i].style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

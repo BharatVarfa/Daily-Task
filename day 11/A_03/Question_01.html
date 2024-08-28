@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            width: 100vw;
+            height: 15vh;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .navcontent{
+            background-color: red;
+            height: 50%;
+            width: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navcontent"></div>
+        <div class="navcontent"></div>
+        <div class="navcontent"></div>
+        <div class="navcontent"></div>
+        <div class="navcontent"></div>
+    </div>
+    <script>
+        //Create a navbar and change the color of its first element to red.
+        // let nav=document.getElementsByClassName("navbar");
+        // console.log(nav);
+
+        let x=document.querySelector("div.navcontent");
+        x.style.backgroundColor="blue";
+    </script>
+</body>
+</html>

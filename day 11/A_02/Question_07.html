@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <p>Paragraph 5</p>
+    <script>
+        // Ad Border to Paragraphs Using getElementsByTagName
+        // Task: Select all <p> elements and apply a red border to each of them.5
+        let x = document.getElementsByTagName("p");
+        for(let i=0;i<x.length;i++){
+            x[i].style.border="2px solid black";
+        }
+    </script>
+</body>
+</html>

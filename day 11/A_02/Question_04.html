@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <table id="table_id" style="border: 2px solid black; border-collapse: collapse; width: 50vw; height: 50vh;text-align: center;">
+        <tr>
+            <th>S no.</th>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bharat Varfa</td>
+            <td>101</td>
+            <td>Rajgarh</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Akash Solanki</td>
+            <td>102</td>
+            <td>Amodiya</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ajeet Jamadari</td>
+            <td>103</td>
+            <td>Gumanpura</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Suraj Solanki</td>
+            <td>104</td>
+            <td>Amodiya</td>
+        </tr>
+
+    </table>
+    <script>
+        // Write JavaScript code to update the content of the last row in a table to "Updated Data".
+        //Hint: Use tvar.rows[tvar.rows.length - 1].cells.
+        let tvar=document.getElementById("table_id");
+        let lastRow=tvar.querySelector(`tbody`).lastElementChild;
+        console.log(lastRow);
+        lastRow.cells[0].textContent = `4`;
+        lastRow.cells[1].textContent=`Raju`;
+        lastRow.cells[2].textContent=`420`;
+        lastRow.cells[3].textContent=`Bihar`;
+
+        // let row=tvar.insertRow(tvar.rows.length-1);
+        // let cell1=row.insertCell(0);
+        // let cell2=row.insertCell(1);
+        // let cell3=row.insertCell(2);
+        // let cell4=row.insertCell(3);
+
+        // cell1.innerHTML="6";
+        // cell2.innerHTML="Raju";
+        // cell3.innerHTML="404";
+        // cell4.innerHTML="Dhar";
+
+
+
+        //Check if the table has a footer row. If not, add a footer row that spans across both columns and displays "End of Data".
+        //Hint: Use tvar.tFoot to check and tvar.createTFoot() to add
+        // if(!tvar.tFoot){
+        //     let foot=tvar.createTFoot();
+        //     let row=foot.insertRow();
+        //     let cell=row.insertCell();
+        //     cell=colSpan=4;
+        //     cell.textContent =`End of Table`;
+        // }
+
+
+        let tvar2=document.getElementById("table_id");
+        let row=tvar2.insertRow(1);
+        let cell1=row.insertCell(0);
+        let cell2=row.insertCell(1);
+        let cell3=row.insertCell(2);
+        let cell4=row.insertCell(3);
+
+        cell1.innerHTML="0";
+
+    </script>
+</body>
+</html>
