@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="inlineClick()" id="btn">Click me</button>
+    <!--<button onclick="this.textContent='Button Clicked'" id="btn">Click me</button> -->
+      <!-- direct approach --> 
+    <script>
+        // Use addEventListener to handle a button click event and change the button text to "Clicked!" each time it's pressed.
+        // Hint: Compare using addEventListener versus using inline event handling (onclick attribute).
+        let mybtn=document.getElementById("btn");
+        mybtn.addEventListener("click",function(){
+            mybtn.textContent="Button Clicked by addEventListner"
+        })
+        function inlineClick(){
+            mybtn.textContent="Button Clicked by inline";
+        }
+
+        // we can add direct too
+        // <button onclick="this.textContent='Button Clicked'" id="btn">Click me</button>
+    </script>
+</body>
+</html>

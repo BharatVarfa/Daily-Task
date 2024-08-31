@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputField">
+    <p id="key"></p>
+    <script>
+        // Create a text input field. Use the keydown event to display each key pressed by the user in a 
+        // separate line in a paragraph below the input field.
+        // Hint: Use event.key to capture and display the key pressed.
+        let input=document.getElementById("inputField");
+        let para=document.getElementById("key");
+        input.addEventListener("keydown",function(e){
+            let div=document.createElement("div");
+            div.textContent=`${e.key}`;
+            para.appendChild(div);
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .button{
+            text-align: center;
+        }
+        #btn{
+            height: 30px;
+            width: 200px;
+            font-size: 25px;
+            background-color: brown;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+<body>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia minima ducimus explicabo, suscipit libero magni
+        sunt nihil maxime magnam vero maiores dolore sit repellat rem expedita eius quasi accusantium eligendi esse?
+        Aliquid alias dignissimos quibusdam ab ex quas in porro provident similique neque error, rem labore autem, vero
+        eveniet sequi numquam excepturi mollitia quidem rerum, facere aliquam. Ratione doloremque totam cupiditate? Cum,
+        quae? Sed dolores porro id? Impedit laboriosam, molestias quaerat recusandae illum reiciendis rerum
+        necessitatibus nobis, autem inventore tenetur esse ipsa distinctio modi culpa quae exercitationem minus porro.
+        Voluptatum delectus maiores voluptas nostrum numquam impedit nisi obcaecati atque cumque totam, sit similique
+        tempore repudiandae deleniti mollitia dolor explicabo? Sequi veritatis perferendis placeat non ea nisi ad
+        praesentium accusamus dicta at. Ut corrupti nihil, itaque magni fuga illo, adipisci, eum provident totam iure
+        natus. Adipisci pariatur esse assumenda inventore nobis ex ut consequuntur nam dicta dolores amet, cum eligendi
+        laborum. Voluptate voluptatem ad necessitatibus dicta similique nemo possimus neque provident! Expedita
+        reprehenderit accusamus voluptate consectetur provident, porro vel nihil adipisci labore dolorem fuga nobis, nam
+        laborum mollitia molestiae quidem obcaecati eveniet aliquam distinctio. Eos aliquid veniam ex veritatis,
+        dignissimos assumenda voluptatem expedita et modi voluptates corporis optio porro explicabo placeat officiis
+        quisquam, voluptate qui excepturi vitae. Voluptatem saepe error earum eaque iure vel aliquid labore officia
+        debitis nostrum dicta, nam praesentium voluptates explicabo porro architecto. Ex voluptas praesentium est,
+        eligendi porro inventore totam illo aperiam tempora odio in dignissimos. Deserunt quaerat consequatur illum, id
+        nisi voluptate perferendis? Ab fuga molestiae labore ullam dolores fugiat porro, cupiditate rem facere
+        repudiandae sit ea consequuntur rerum nobis, quaerat vitae saepe? In libero culpa magni nemo vel quas enim
+        commodi error quaerat unde, harum labore dolorem, et rerum qui ex veniam similique! Asperiores dicta perferendis
+        nemo consectetur impedit? Doloremque voluptatibus quis eveniet adipisci officiis.</p>
+        <div class="button"><button id="btn">Click to hide</button></div>
+    <script>
+        // Create a button that toggles the visibility of a paragraph. When the button is clicked, the paragraph should
+        // be hidden if it's currently visible, and shown if it's currently hidden.
+        // Hint: Use the onclick event and CSS properties like display or visibility.
+        let paraEle=document.getElementById("para");
+        let mybtn=document.getElementById("btn");
+        let hide=false;
+        mybtn.addEventListener("click",function(){
+            if(!hide){
+                paraEle.style.visibility="hidden";
+                mybtn.textContent="Click to unhide";
+                hide=true;
+            }
+            else{
+                paraEle.style.visibility="";
+                mybtn.textContent="Click to hide";
+                hide=false;
+            }
+        })
+    </script>
+</body>
+
+</html>

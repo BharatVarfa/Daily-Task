@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btnCont{
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 110px;
+        height: 30px;
+        font-size: 25px;
+        background-color: red;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px white inset;
+    }
+</style>
+<body>
+    <div class="btnCont">
+        <div>
+        <button id="alert1">Alert 1</button>
+        <button id="alert2">Alert 2</button>
+        <button id="alert3">Alert 3</button>
+        <button id="alert4">Alert 4</button>
+    </div>
+    </div>
+    <script>
+        // Write a program to show a different alerts when different buttons are clicked 
+        let btn1=document.getElementById("alert1");
+        btn1.addEventListener("click",function(){
+            alert("Button 1 is clicked");
+        });
+        let btn2=document.getElementById("alert2");
+        btn2.addEventListener("click",function(){
+            alert("Button 2 is clicked");
+        });
+        let btn3=document.getElementById("alert3");
+        btn3.addEventListener("click",function(){
+            alert("Button 3 is clicked");
+        });
+        let btn4=document.getElementById("alert4");
+        btn4.addEventListener("click",function(){
+            alert("Button 4 is clicked");
+        });
+    </script>
+</body>
+</html>

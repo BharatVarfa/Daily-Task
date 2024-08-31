@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .toggl{
+        height: 50px;
+        width: 100px;
+        background-color:red;
+        position: relative;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+    }
+    .toggl::before{
+        content: "";
+        height: 42px;
+        width: 42px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transition: transform 0.3s ease;
+    }
+    .toggl.on::before{
+        transform: translateX(50px);
+    }
+    .toggl.on{
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="toggl"></div>
+    <script>
+        let x=document.querySelector(".toggl");
+        x.addEventListener('click',function(){
+            x.classList.toggle('on');
+        });
+        
+
+    </script>
+</body>
+</html>

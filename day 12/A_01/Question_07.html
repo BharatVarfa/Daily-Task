@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Double Click</button>
+    <div id="msg"></div>
+    <script>
+        // Write a JavaScript function that listens for a double click on an element and performs a specific action.
+        // Explanation:
+
+        // In the above exercise,
+
+        // First, we define a button element with the id "myButton". The JavaScript code retrieves this button element using document.getElementById('myButton') and assigns it to the myButton variable.
+        // Next we attach an event listener to the button using the addEventListener method. We specify the event type as "dblclick" to detect double clicks on the button.
+        // Inside the event listener function, we log a message to the console indicating that the double click action was performed. You can replace the console.log statement with your desired action.
+        let myButton=document.getElementById("myButton");
+        myButton.addEventListener('dblclick',function (){
+            document.getElementById("msg").textContent="Double clicked";
+        });
+
+    
+    </script>
+</body>
+</html>

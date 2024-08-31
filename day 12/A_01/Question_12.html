@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #div1{
+            background-color: black;
+            height: 40vh;
+            width: 40vw;
+            color: white;
+            font-size: 35px;
+            /* border: 2px solid blue; */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+        // Create a div that changes its text content to "Mouse Entered" when the mouse enters the div, 
+        //changes to "Mouse Over" when the mouse hovers within the div, and finally changes to "Mouse Left" 
+        //when the mouse leaves the div.
+        // Hint: Use a combination of onmouseenter, onmouseover, and onmouseleave events.
+        let divEle=document.getElementById("div1");
+        divEle.addEventListener("mouseenter",function(){
+            divEle.textContent="Mouse Enters";
+        });
+        divEle.addEventListener("mouseover",function(){
+            divEle.textContent="Mouse Hovers";
+        });
+        divEle.addEventListener("mouseleave",function(){
+            divEle.textContent="Mouse LEft";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #watch{
+            color:red;
+            font-size: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 80px; color: red;">Clock</h1>
+    <div id="watch"></div>
+    <script>
+        //Create an input field that shows the current date and time in a paragraph below it each time a key is released (on keyup).
+        //Hint: Use the keyup event and new Date() to display the current date and time.
+        // let date1=new Date();
+        // document.write(date1);
+        // document.write(date1.getTime());
+
+        function updateTime(){
+            let time=document.getElementById("watch");
+            let now=new Date();
+            let hours=String(now.getHours()).padStart(2,'0');
+            let minutes=String(now.getMinutes()).padStart(2,'0');
+            let second=String(now.getSeconds()).padStart(2,'0');
+            time.textContent=`${hours}:${minutes}:${second}`;
+        }
+        setInterval(updateTime,1000);
+        setInterval();
+    </script>
+</body>
+</html>

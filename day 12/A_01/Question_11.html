@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mybtn">Button</button>
+    <script>
+        //Create a button that shows a message saying "Button Pressed" when the mouse button is pressed down 
+        // and shows "Button Released" when the mouse button is released over the button.
+        // Hint: Use onmousedown and onmouseup events.
+        let btn=document.getElementById("mybtn");
+        btn.addEventListener("mousedown",function(){
+            btn.textContent="Button Pressed";
+        });
+        btn.addEventListener("mouseup",function(){
+            btn.textContent="Button Released";
+        });
+        
+    </script>
+</body>
+</html>

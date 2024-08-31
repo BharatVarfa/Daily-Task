@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="" id="pass">
+    <div id="display"></div>
+    <script>
+        // Create a password input field that checks for at least 8 characters on the keyup event and displays a message "Password is valid" or "Password is too short" below the input.
+        // Hint: Use keyup to trigger the validation and display messages accordingly.
+        let x=document.getElementById("pass");
+        let dis=document.getElementById("display");
+        let count=0;
+        x.addEventListener("keyup",function(){
+            const password=x.value;
+            if(password.length>=8){
+                dis.textContent="Password is valid";
+                dis.style.color="green";
+            }
+            else{
+                dis.textContent="invalid password";
+                dis.style.color="red";
+            }
+        })
+    </script>
+</body>
+</html>

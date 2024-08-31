@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="inputField">
+    <script>
+        // Create an input field that changes the background color of the page to yellow if the user presses the 
+        // "y" key, blue if the "b" key is pressed, and resets to white if the "r" key is pressed.
+        // Hint: Use the keydown event and a conditional statement to check the specific keys pressed.
+        let input = document.getElementById("inputField");
+        input.addEventListener("keydown", function (e) {
+            if (e.key == 'y') {
+                document.body.style.backgroundColor = "yellow";
+            }
+            if (e.key == 'b') {
+                document.body.style.backgroundColor = "blue";
+            }
+            if (e.key == 'g') {
+                document.body.style.backgroundColor = "green";
+            }
+            if (e.key == 'r') {
+                document.body.style.backgroundColor = "";
+            }
+        });
+    </script>
+</body>
+
+</html>

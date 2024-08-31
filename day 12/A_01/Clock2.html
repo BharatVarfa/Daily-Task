@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clock</h1>
+    <div></div>
+    <script>
+        function updateTime(){
+        let date=new Date();
+        let h=date.getHours();
+        let m=date.getMinutes();
+        let s=date.getSeconds()
+        let sesson="AM";
+        if(h>=12){
+            sesson="PM";
+        }
+        if(h>12){
+            h=h-12;
+        }
+        h=String(h).padStart(2,'0');
+        m=String(m).padStart(2,'0');
+        s=String(s).padStart(2,'0');
+        let time=document.querySelector("div");
+        time.textContent=`${h}:${m}:${s}:${sesson}`
+    }
+    setInterval(updateTime,1000);
+    setInterval();
+    </script>
+</body>
+</html>

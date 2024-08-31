@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #par{
+        background-color: black;
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #child{
+        background-color: red;
+        height: 50%;
+        width: 50%;
+    }
+</style>
+<body>
+    <div id="par">
+        <div id="child">
+
+        </div>
+    </div>
+    <script>
+        // Create two div elements. Assign onmouseenter to the first and onmouseover to the second. 
+        //Both should display an alert when triggered. Experiment by placing child elements inside each 
+        //div and observe how each event behaves when moving the mouse within the div and its child elements.
+        //Hint: Explain the difference in behavior between onmouseenter and onmouseover.
+        let parent=document.getElementById("par");
+        parent.addEventListener("mouseenter",function(){
+            parent.style.backgroundColor="burlywood";
+        });
+        parent.addEventListener("mouseleave",function(){
+            parent.style.backgroundColor="";
+        });
+        let child=document.getElementById("child");
+        child.addEventListener("mouseenter",function(){
+            child.style.backgroundColor="blue";
+            parent.style.backgroundColor="";
+        });
+        child.addEventListener("mouseleave",function(){
+            child.style.backgroundColor="";
+        });
+        parent.addEventListener("mouseover",function(){
+            parent.style.backgroundColor="green";
+        });
+    </script>
+</body>
+</html>

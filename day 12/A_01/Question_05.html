@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #togg{
+        width: 60px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 30px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #togg::before{
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+    }
+
+    #togg.on{
+        background-color: #4caf50;
+    }
+
+    #togg.on::before{
+        transform: translateX(30px);
+    }
+
+</style>
+<body>
+    <div id="togg"></div>
+    <script>
+        // Write a JavaScript program to implement a toggle switch that changes its state when clicked.
+        // Explanation:
+
+        // In the above exercise,
+        // We have a <div> element with the class toggle that represents a toggle switch. The switch has an initial state of "off" (default) defined by the .toggle class. When the switch is toggled on, the .on class is added to the toggle element, changing its appearance.
+
+        // CSS styles define the toggle switch's appearance and behavior. The .toggle class sets the dimensions, position, border radius, and transition properties. The .toggle::before pseudo-element creates the circular handle of the switch. The .toggle.on class changes the background color of the switch when it is toggled on. The .toggle.on::before class transforms the handle to the "on" position.
+
+        // The JavaScript code attaches a click event listener to the toggle element. When the toggle switch is clicked, the event listener toggles the .on class on the 
+        // toggle element using the classList.toggle() method. This changes the state of the switch and triggers the corresponding CSS styles for the on or off state.
+        let toggle=document.getElementById("togg");
+            toggle.addEventListener('click',function(){
+                togg.classList.toggle('on');
+            });
+    
+
+    </script>
+</body>
+</html>

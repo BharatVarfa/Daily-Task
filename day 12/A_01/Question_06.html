@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp">
+    <div id="msg"></div>
+    <script>
+        // Write a JavaScript program that adds a keydown event listener to a text input to detect when the "Enter key" is pressed.
+        // Explanation:
+
+        // In the above exercise -
+
+        // First we define an input element with the id "textInput". The JavaScript code retrieves this input element using document.getElementById('textInput') and assigns it to the textInput variable.
+        // Next we attach an event listener to the text input using the addEventListener method. We specify the event type as "keydown" to detect when any key is pressed while the text input has focus.
+        // Inside the event listener function, we check if the event.key property is equal to "Enter". If it is, we log a message to the console indicating that the Enter key was pressed.
+
+        let x=document.getElementById("inp");
+
+        x.addEventListener("keyup",keyDown);
+        function keyDown(e){
+            let msg=document.getElementById("msg");
+            // msg.textContent=`${e.key}`;
+            if(e.key==="Enter"){
+                msg.textContent=`enter key is pressed`;
+            }
+        }
+    </script>
+</body>
+</html>

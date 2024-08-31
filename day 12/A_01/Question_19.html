@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inputField" placeholder="Type number only">
+    <div id="msg"></div>
+    <script>
+        // Create a text input that only allows numeric input. Display a message "Only numbers are allowed" if any non-numeric key is pressed using the keypress event.
+        // Hint: Use the event.key and check if it's not a number; display the message.
+        let inp=document.getElementById("inputField");
+        let msg=document.getElementById("msg");
+        let re=/^[\d]$/;
+        let validity=true;
+        inp.addEventListener("keydown",function(e){
+            if(re.test(e.key) && validity){
+                msg.textContent="valid";
+                msg.style.color="green";
+            }
+            else{
+                msg.textContent="invalid does not contain any non-numeric character";
+                msg.style.color="red";
+                validity=false;
+            }
+        });
+    </script>
+</body>
+</html>

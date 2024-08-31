@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 50vh;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        .imgCont{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgCont" ><img src="first.jpg" id="img_id" alt=""></div>
+    <script>
+        // Create an image that changes to a different image when the mouse hovers over it, and reverts 
+        // back to the original image when the mouse leaves.
+        // Hint: Use onmouseover and onmouseout events with src attribute manipulation.
+        let image=document.getElementById("img_id");
+        image.addEventListener("mouseover",function(){
+            image.setAttribute('src','second.jpg');
+        });
+        image.addEventListener("mouseleave",function(){
+            image.setAttribute('src','first.jpg');
+        });
+    </script>
+</body>
+</html>

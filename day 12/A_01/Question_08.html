@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    div{
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        width: 200px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div id="parent">
+    <input type="text" placeholder="Type color name or code" name="" id="text1">
+    </div>
+    <script>
+        // Create a input feild when type any color in the input feild , so according to that my div background color will change in that color at runtime. |
+        let ele=document.getElementById("text1");
+        
+        // ele.addEventListener("keyup",function(e){
+        //     if(e.key==="Enter"){
+        //         // let color=ele.value;
+        //         document.getElementById("parent").style.backgroundColor=ele.value;
+        //     }
+        // }
+        // );
+        ele.addEventListener("input",function(){
+            document.getElementById("parent").style.backgroundColor=ele.value;
+        });
+    </script>
+</body>
+</html>

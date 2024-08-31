@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="imgContainer"><img id="img" src="first.jpg" alt=""></div>
+    
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <script>
+        //Write a JavaScript program to create a slideshow that changes the displayed image when a next or previous button is clicked.
+        let nextCont=document.getElementById("imgContainer");
+        let next=document.getElementById("next");
+        next.addEventListener("click",function(){
+            document.getElementById("img").removeAttribute('src');
+            document.getElementById("img").setAttribute('src','second.jpg');
+        });
+        let prev=document.getElementById("prev");
+        prev.addEventListener("click",function(){
+            document.getElementById("img").removeAttribute('src');
+            document.getElementById("img").setAttribute('src','first.jpg');
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 20vh;
+        width: 12vw;
+        background-color: black;
+    }
+</style>
+<body>
+    <div  id="div1"></div>
+    <br>
+    <div id="div2"></div>
+    <script>
+        //3. Write a JavaScript function that changes the background color of an element when a mouse enters it.
+        
+        function changeBgColor1(ele,color){
+            ele.addEventListener("mouseenter",function(){
+            ele.style.backgroundColor=color;});
+            ele.addEventListener("mouseleave",function(){
+                ele.style.backgroundColor="";});
+        }
+        let ele=document.getElementById("div1");
+        changeBgColor1(ele,"red");
+
+        //--------------------------------------//
+
+        function changeBgColor(ele){
+            ele.addEventListener("mouseenter",mouseEnter);
+            ele.addEventListener("mouseleave",mouseLeave);
+        }
+        function mouseEnter(){
+            x.style.backgroundColor="blue";
+        }
+        function mouseLeave(){
+            x.style.backgroundColor="";
+        }
+
+        let x=document.getElementById("div2");
+        changeBgColor(x);
+
+    </script>
+</body>
+</html>
